@@ -10,10 +10,12 @@
         }
     </style>
 </head>
+    
 <body>
     <div id="app">
-        <p v-bine:class="errorTextColor">Hello</p>
+        <p v-bind:class="errorTextColor">Hello</p>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
         new Vue({
@@ -23,17 +25,17 @@
                 isError: false
             },
             computed: {
-                errorTextColor: function() {
-                    // if(isError) {
-                    //     return 'warning'
+                errorTextColor: function () {
+                    // if (isError) {
+                    //   return 'warning'
                     // } else {
-                    //     return null;
+                    //   return null;
                     // }
                     return this.isError ? 'warning' : null;
                 }
             }
         });
     </script>
-
 </body>
 </html>
+    
