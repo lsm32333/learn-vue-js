@@ -8,6 +8,7 @@
       <label for="password">pw: </label>
       <input id="password" type="password">
     </div>
+    <button>login</button>
   </form>
 </template>
 
